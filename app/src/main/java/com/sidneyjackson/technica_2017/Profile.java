@@ -9,9 +9,9 @@ import java.util.List;
 
 public class Profile {
 
-    String first_Name = "";
-    String middle_Name = "";
-    String last_Name = "";
+    String firstName = "";
+    String middleInitial = "";
+    String lastName = "";
 
     String linkedInLink = "";
     String emailAddress = "";
