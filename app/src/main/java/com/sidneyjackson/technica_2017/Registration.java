@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.EditText;
 
 public class Registration extends AppCompatActivity {
-    Profile profile;
+    private Profile profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
