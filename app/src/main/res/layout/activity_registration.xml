@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sidneyjackson.technica_2017.Registration">
+
+    <TextView
+        android:id="@+id/title_ID"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="12dp"
+        android:text="Profile Registration"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/fName_ID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="First Name"/>
+
+        <EditText
+            android:id="@+id/mName_ID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="MI"/>
+
+        <EditText
+            android:id="@+id/lName_ID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Last Name" />
+    </LinearLayout>
+
+</LinearLayout>
