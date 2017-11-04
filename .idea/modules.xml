@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Technica-2017.iml" filepath="$PROJECT_DIR$/Technica-2017.iml" />
+      <module fileurl="file://C:\Users\cnoel\Dropbox\Technica_2017\Technica-App-2017\Technica-2017.iml" filepath="C:\Users\cnoel\Dropbox\Technica_2017\Technica-App-2017\Technica-2017.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Technica-App-2017.iml" filepath="$PROJECT_DIR$/.idea/Technica-App-2017.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\cnoel\Dropbox\Technica_2017\Technica-App-2017\app\app.iml" filepath="C:\Users\cnoel\Dropbox\Technica_2017\Technica-App-2017\app\app.iml" />
     </modules>
   </component>
 </project>
