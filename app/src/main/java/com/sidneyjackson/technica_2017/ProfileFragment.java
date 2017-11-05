@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
 
 
 /**
@@ -22,6 +24,8 @@ public class ProfileFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    private View rootView;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -64,7 +68,43 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        rootView = inflater.inflate(R.layout.fragment_profile, container, false);
+        getActivity().setTitle(R.string.profile_title);
+
+        EditText firstName = (EditText) rootView.findViewById(R.id.fName_ID);
+        EditText lastName = (EditText) rootView.findViewById(R.id.lName_ID);
+        EditText middleInitial = (EditText) rootView.findViewById(R.id.mName_ID);
+
+        EditText email = (EditText) rootView.findViewById(R.id.email_ID);
+        EditText linkedIn = (EditText) rootView.findViewById(R.id.linkedInID);
+
+        EditText school = (EditText) rootView.findViewById(R.id.school_ID);
+        EditText discipline = (EditText) rootView.findViewById(R.id.disciplineID);
+        EditText degree = (EditText) rootView.findViewById(R.id.degreeID);
+        EditText eduYear = (EditText) rootView.findViewById(R.id.eduYearID);
+
+        EditText businessName = (EditText) rootView.findViewById(R.id.businessNameID);
+        EditText businessArea = (EditText) rootView.findViewById(R.id.businessAreaID);
+
+        firstName.setText("Leshon");
+        lastName.setText("Kimble-Brown");
+        middleInitial.setText("D");
+        email.setText("le@shon.com");
+        linkedIn.setText("www.linkedin.com/leshon-kimble-brown");
+        school.setText("University of Illinois at Chicago");
+        discipline.setText("Urban Planning");
+        degree.setText("Masters");
+        eduYear.setText("1993");
+        businessName.setText("Urban Planners for Social Change");
+        businessArea.setText("DC Metro Area");
+
+        return rootView;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().setTitle(R.string.profile_title);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

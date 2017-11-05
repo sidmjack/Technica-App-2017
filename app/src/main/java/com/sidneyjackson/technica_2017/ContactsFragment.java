@@ -23,6 +23,8 @@ public class ContactsFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+    private View rootView;
+
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
@@ -64,7 +66,15 @@ public class ContactsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contacts, container, false);
+        rootView = inflater.inflate(R.layout.fragment_contacts, container, false);
+        getActivity().setTitle(R.string.connect_title);
+        return rootView;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().setTitle(R.string.connect_title);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
