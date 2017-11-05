@@ -26,7 +26,10 @@ public class DummyContent {
 //    private static final int COUNT = 25;
 
     static {
-        String[] names = {"Channing Kimble-Brown", "Quinlan Kimble-Brown", "Sidney Jackson", "Rinas Osman"};
+        String[] names = {"Channing Kimble-Brown", "Quinlan Kimble-Brown", "Sidney Jackson",
+                "Rinas Osman", "Tejiri Smith", "Turquoise Baker", "Penny Proud",
+                "Ruth Kimble", "Raven Symone", "Tia Mowry", "Tamera Mowry", "Beyonce Knowles",
+                "Janelle Monae", "Katherine Johnson", "Cynthia Brown", "Sharon Deshazer"};
         // Add some sample items.
         for (int i = 0; i < names.length; i++) {
             addItem(createDummyItem(i, names[i]));
