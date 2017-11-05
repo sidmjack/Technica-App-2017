@@ -11,7 +11,7 @@ import java.util.Map;
  * <p>
  * TODO: Replace all uses of this class before publishing your app.
  */
-public class DummyContent {
+public class DummyContacts {
 
     /**
      * An array of sample (dummy) items.
@@ -23,16 +23,12 @@ public class DummyContent {
      */
     public static final Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
 
-//    private static final int COUNT = 25;
+    private static final int COUNT = 25;
 
     static {
-        String[] names = {"Channing Kimble-Brown", "Quinlan Kimble-Brown", "Sidney Jackson",
-                "Rinas Osman", "Tejiri Smith", "Turquoise Baker", "Penny Proud",
-                "Ruth Kimble", "Raven Symone", "Tia Mowry", "Tamera Mowry", "Beyonce Knowles",
-                "Janelle Monae", "Katherine Johnson", "Cynthia Brown", "Sharon Deshazer"};
         // Add some sample items.
-        for (int i = 0; i < names.length; i++) {
-            addItem(createDummyItem(i, names[i]));
+        for (int i = 1; i <= COUNT; i++) {
+            addItem(createDummyItem(i));
         }
     }
 
@@ -41,8 +37,8 @@ public class DummyContent {
         ITEM_MAP.put(item.id, item);
     }
 
-    private static DummyItem createDummyItem(int position, String name) {
-        return new DummyItem(String.valueOf(position), "Item " + position, "", name);
+    private static DummyItem createDummyItem(int position) {
+        return new DummyItem(String.valueOf(position), "Item " + position, makeDetails(position));
     }
 
     private static String makeDetails(int position) {
@@ -61,13 +57,11 @@ public class DummyContent {
         public final String id;
         public final String content;
         public final String details;
-        public final String name;
 
-        public DummyItem(String id, String content, String details, String name) {
+        public DummyItem(String id, String content, String details) {
             this.id = id;
             this.content = content;
             this.details = details;
-            this.name = name;
         }
 
         @Override

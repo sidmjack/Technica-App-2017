@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import com.sidneyjackson.technica_2017.dummy.DummyContent;
 import com.sidneyjackson.technica_2017.dummy.DummyContent.DummyItem;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -69,7 +70,14 @@ public class ContactFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyContactRecyclerViewAdapter(DummyContent.ITEMS, mListener));
+
+            List<DummyItem> contactItems = new LinkedList<>();
+
+            for (int i = 0; i < 3; i++) {
+                contactItems.add(DummyContent.ITEMS.get(i));
+            }
+
+            recyclerView.setAdapter(new MyContactRecyclerViewAdapter(contactItems, mListener));
         }
         return view;
     }

@@ -69,8 +69,8 @@ public class ContactsFragment extends Fragment {
         host = new FragmentTabHost(getActivity());
         host.setup(getActivity(), getChildFragmentManager(), R.layout.fragment_contacts);
 
-        host.addTab(host.newTabSpec("contact").setIndicator("contact"), ContactFragment.class, null);
-        host.addTab(host.newTabSpec("potential").setIndicator("potential"), PotentialContactFragment.class, null);
+        host.addTab(host.newTabSpec("contacts").setIndicator("contacts"), ContactFragment.class, null);
+        host.addTab(host.newTabSpec("potential contacts").setIndicator("potential contacts"), PotentialContactFragment.class, null);
 
         return host;
     }
