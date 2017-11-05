@@ -15,140 +15,140 @@
             android:orientation="vertical"
             android:layout_height="wrap_content"
             android:layout_width="match_parent">
-    <LinearLayout
-        android:layout_width="262dp"
-        android:layout_height="229dp"
-        android:layout_gravity="center"
-        android:background="@drawable/profile_splash"
-        android:gravity="center">
+            <LinearLayout
+                android:layout_width="262dp"
+                android:layout_height="229dp"
+                android:layout_gravity="center"
+                android:background="@drawable/profile_splash"
+                android:gravity="center">
 
-        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/profile_image"
-            android:layout_width="135dp"
-            android:layout_height="134dp"
-            android:layout_gravity="center"
-            android:src="@drawable/profile_picture"
-            app:civ_border_color="@color/colorPrimaryDark"
-            app:civ_border_width="1dp" />
-    </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="135dp"
+                    android:layout_height="134dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_picture"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    app:civ_border_width="1dp" />
+            </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="5dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="5dp"
-        android:text="Personal Information:"
-        android:textSize="16dp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
-
-        <EditText
-            android:id="@+id/fName_ID"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:hint="*First Name" />
-
-        <EditText
-            android:id="@+id/mName_ID"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="MI" />
-
-        <EditText
-            android:id="@+id/lName_ID"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:hint="*Last Name" />
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/email_ID"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="*E-Mail Address"/>
-
-        <EditText
-            android:id="@+id/linkedInID"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="LinkedIn Profile Link" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
-
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:text="Education:"
-            android:textSize="16dp"
-            android:textStyle="bold"/>
-
-        <EditText
-            android:id="@+id/school_ID"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:hint="College / University" />
-
-        <EditText
-            android:id="@+id/disciplineID"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:hint="Discipline / Field of Study" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
-
-            <EditText
-                android:id="@+id/degreeID"
-                android:layout_width="0dp"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Degree" />
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Personal Information:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/eduYearID"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Year" />
-        </LinearLayout>
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
 
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/fName_ID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="*First Name" />
+
+                <EditText
+                    android:id="@+id/mName_ID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="MI" />
+
+                <EditText
+                    android:id="@+id/lName_ID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="*Last Name" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/email_ID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="*E-Mail Address"/>
+
+                <EditText
+                    android:id="@+id/linkedInID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="LinkedIn Profile Link" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Education:"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/school_ID"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:hint="College / University" />
+
+                <EditText
+                    android:id="@+id/disciplineID"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:hint="Discipline / Field of Study" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <EditText
+                        android:id="@+id/degreeID"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Degree" />
+
+                    <EditText
+                        android:id="@+id/eduYearID"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Year" />
+                </LinearLayout>
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -185,66 +185,66 @@
                     android:prompt="@string/improvement_prompt" />
             </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
-
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:layout_weight="1"
-            android:text="Business Information:"
-            android:textSize="16dp"
-            android:textStyle="bold"/>
-
-        <EditText
-            android:id="@+id/businessNameID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Business Name" />
-
-        <EditText
-            android:id="@+id/businessAreaID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Business Area" />
-
-    </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
-
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:paddingTop="5dp"
-                android:paddingBottom="10dp"
-                android:layout_weight="1"
-                android:text="Business Mission Statement:"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
-
-            <EditText
-                android:id="@+id/businessMissionID"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Business Mission Statement" />
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
 
-        </LinearLayout>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="Business Information:"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/businessNameID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Business Name" />
+
+                <EditText
+                    android:id="@+id/businessAreaID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Business Area" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="Business Mission Statement:"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/businessMissionID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Business Mission Statement" />
+
+            </LinearLayout>
 
 
             <LinearLayout

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,13 +24,12 @@ public class ContactsFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    private View rootView;
-
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+    private FragmentTabHost host;
 
     public ContactsFragment() {
         // Required empty public constructor
@@ -66,15 +66,13 @@ public class ContactsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        rootView = inflater.inflate(R.layout.fragment_contacts, container, false);
-        getActivity().setTitle(R.string.connect_title);
-        return rootView;
-    }
+        host = new FragmentTabHost(getActivity());
+        host.setup(getActivity(), getChildFragmentManager(), R.layout.fragment_contacts);
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        getActivity().setTitle(R.string.connect_title);
+        host.addTab(host.newTabSpec("contact").setIndicator("contact"), ContactFragment.class, null);
+        host.addTab(host.newTabSpec("potential").setIndicator("potential"), PotentialContactFragment.class, null);
+
+        return host;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -93,6 +91,12 @@ public class ContactsFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        host = null;
     }
 
     /**
