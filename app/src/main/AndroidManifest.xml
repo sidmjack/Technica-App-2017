@@ -17,8 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Registration" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".NewsFeedActivity"
+            android:label="@string/title_activity_news_feed"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

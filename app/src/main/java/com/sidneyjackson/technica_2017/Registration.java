@@ -1,5 +1,6 @@
 package com.sidneyjackson.technica_2017;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -23,6 +24,10 @@ public class Registration extends AppCompatActivity {
         profile.firstName = firstName.toString();
         profile.lastName = lastName.toString();
         profile.middleInitial = middleInitial.toString();
+
+        Intent intent = new Intent(Registration.this, NewsFeedActivity.class);
+        startActivity(intent);
+        finish();
 
     }
 }
