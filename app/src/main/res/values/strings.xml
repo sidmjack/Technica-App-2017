@@ -13,4 +13,23 @@
     <string name="home_title">News Feed</string>
     <string name="connect_title">Connect</string>
     <string name="profile_title">Profile</string>
+
+    <string name="strength_prompt">Areas of Expertise</string>
+
+    <string-array name="strength_arrays">
+        <item>Areas of Expertise</item>
+        <item>Marketing</item>
+        <item>Fund Raising</item>
+        <item>Sponsorships</item>
+    </string-array>
+
+    <string name="improvement_prompt">Areas of Expertise</string>
+
+    <string-array name="improvement_arrays">
+        <item>Areas of Growth</item>
+        <item>Company Growth</item>
+        <item>Community Outreach</item>
+        <item>Recruitment</item>
+    </string-array>
+
 </resources>
