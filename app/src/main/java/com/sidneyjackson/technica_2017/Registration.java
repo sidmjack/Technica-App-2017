@@ -3,6 +3,8 @@ package com.sidneyjackson.technica_2017;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class Registration extends AppCompatActivity {
@@ -12,6 +14,15 @@ public class Registration extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+
+        Button registerBtn = (Button) findViewById(R.id.email_sign_in_button);
+
+        registerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                save();
+            }
+        });
 
         profile = new Profile();
     }

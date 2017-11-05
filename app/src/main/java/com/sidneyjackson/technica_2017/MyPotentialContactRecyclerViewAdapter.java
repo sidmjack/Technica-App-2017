@@ -36,8 +36,7 @@ public class MyPotentialContactRecyclerViewAdapter extends RecyclerView.Adapter<
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
-        holder.mContentView.setText(mValues.get(position).content);
+        holder.mContentView.setText(mValues.get(position).name);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,14 +57,14 @@ public class MyPotentialContactRecyclerViewAdapter extends RecyclerView.Adapter<
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
-        public final TextView mIdView;
+//        public final TextView mIdView;
         public final TextView mContentView;
         public DummyItem mItem;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mIdView = (TextView) view.findViewById(R.id.id);
+//            mIdView = (TextView) view.findViewById(R.id.id);
             mContentView = (TextView) view.findViewById(R.id.content);
         }
 
