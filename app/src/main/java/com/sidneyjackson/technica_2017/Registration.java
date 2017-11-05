@@ -25,7 +25,7 @@ public class Registration extends AppCompatActivity {
         profile.lastName = lastName.toString();
         profile.middleInitial = middleInitial.toString();
 
-        Intent intent = new Intent(Registration.this, NewsFeedActivity.class);
+        Intent intent = new Intent(Registration.this, MainActivity.class);
         startActivity(intent);
         finish();
 

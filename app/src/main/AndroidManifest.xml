@@ -19,8 +19,8 @@
         <activity android:name=".Registration" />
         <activity android:name=".LoginActivity" />
         <activity
-            android:name=".NewsFeedActivity"
-            android:label="@string/title_activity_news_feed"
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
