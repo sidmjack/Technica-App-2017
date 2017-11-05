@@ -171,17 +171,17 @@
 
     </LinearLayout>
 
-    <!--<Button-->
-        <!--android:id="@+id/email_sign_in_button"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="center"-->
-        <!--android:layout_marginTop="10dp"-->
-        <!--android:background="@color/colorPrimary"-->
-        <!--android:paddingLeft="60dp"-->
-        <!--android:paddingRight="60dp"-->
-        <!--android:text="Register Profile"-->
-        <!--android:textColor="#fff"-->
-        <!--android:textSize="24dp"/>-->
+    <Button
+        android:id="@+id/update_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="Update Profile"
+        android:textColor="#fff"
+        android:textSize="24dp"/>
 
 </LinearLayout>
